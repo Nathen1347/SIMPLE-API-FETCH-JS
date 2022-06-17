@@ -1,0 +1,67 @@
+body{
+    background: whitesmoke;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+    color: whitesmoke;
+}
+
+.title-cont{
+    border: 5px black solid;
+    border-radius: 10px;
+    background-color: purple;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    border-bottom: 3px solid black;
+}
+
+#activity{
+    font-size: 25px;
+}
+
+@-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+#fetch-activity{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: grey;
+    border: 2px whitesmoke solid;
+    cursor: pointer;
+    -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+#fetch-activity:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
